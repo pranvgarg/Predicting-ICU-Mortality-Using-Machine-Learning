@@ -1,7 +1,5 @@
 # 🏥 Predicting ICU Mortality Using Machine Learning: A Global Perspective 🌍
 
-![Project Banner](https://your-banner-image-url) <!-- Add a relevant banner image URL -->
-
 ---
 
 ## 📑 Table of Contents
@@ -53,17 +51,40 @@ The dataset originates from the **GOSSIS Consortium**, encompassing ICU data fro
 
 Predicting-ICU-Mortality-Using-Machine-Learning/
 │
-├── 📁 Apache/                  # APACHE model experiments
-├── 📁 AutoML/                  # Automated Machine Learning scripts
-├── 📁 Final Modeling/          # Final model development
-├── 📁 NeuralNet/               # MLP Neural Network implementation
-├── 📁 PubMed/                  # PubMed article analysis scripts
-├── 🗒️ dataset Descriptions.xslm # Dataset details and metadata
-├── 📄 dataset.csv              # Processed dataset
-├── 📄 Project Outline.docx     # Detailed project description
-├── 📖 README.md                # This file
-├── 📜 LICENSE                  # License information
-└── 📄 AML Final Project Presentation.pdf/.pptx # Project presentation
+├── 📁 Apache/                   # Contains APACHE model experiments and related files
+│   ├── APACHE.ipynb             # Jupyter notebook for APACHE modeling
+│   ├── standard_scaler.joblib   # Scaler used in preprocessing
+│   ├── smotenc_resampler.joblib # SMOTENC resampling file
+│   └── best_model_Final_Model.pth  # Saved best model for APACHE
+│
+├── 📁 AutoML/                   # Automated Machine Learning scripts and outputs
+│   ├── AUTOML.ipynb             # Jupyter notebook for AutoML implementation
+│   └── automl_flaml.log         # Log file for AutoML process
+│
+├── 📁 Final Modeling/           # Scripts and files for final model development
+│   ├── AML_Final_Modeling.ipynb # Jupyter notebook for final modeling
+│   ├── catboost_info/           # Folder for CatBoost model logs
+│   └── model_files/             # Additional model files if applicable
+│
+├── 📁 NeuralNet/                # MLP Neural Network implementation and resources
+│   ├── NN.ipynb                 # Jupyter notebook for MLP Neural Network
+│   ├── best_model_fold1.pth     # Saved MLP model for fold 1
+│   ├── best_model_fold2.pth     # Saved MLP model for fold 2
+│   ├── best_model_fold3.pth     # Saved MLP model for fold 3
+│   ├── standard_scaler.joblib   # Scaler for preprocessing
+│   └── smotenc_resampler.joblib # SMOTENC resampling file for class balancing
+│
+├── 📁 PubMed/                   # PubMed article analysis scripts and outputs
+│   ├── PubMed_article_search.ipynb # Jupyter notebook for PubMed analysis
+│   ├── pubmed_articles.csv      # Extracted and ranked articles
+│   └── summaries/               # Folder for summarized articles (if applicable)
+│
+├── 🗒️ dataset Descriptions.xslm  # Excel file with dataset details and metadata
+├── 📄 dataset.csv               # Cleaned and processed dataset used for modeling
+├── 📄 Project Outline.docx      # Detailed project description and problem statement
+├── 📖 README.md                 # README file (this file)
+├── 📜 LICENSE                   # License information for the project
+└── 📄 AML Final Project Presentation.pdf/.pptx # Project presentation slides
 
 ---
 
@@ -124,22 +145,22 @@ Key metrics included:
 
 
 ▶️ Running the Project
-	1.	Data Preprocessing:
-	•	Run AutoML.ipynb or NeuralNet/NN.ipynb.
-	2.	Model Training:
-	•	Navigate to Final Modeling/ for the main training scripts.
-	3.	PubMed Analysis:
-	•	Check PubMed/ scripts for article retrieval and summarization.
+	
+1.	Data Preprocessing:	Run AutoML.ipynb or NeuralNet/NN.ipynb.
+	
+2.	Model Training:	Navigate to Final Modeling/ for the main training scripts.
+	
+3.	PubMed Analysis:	Check PubMed/ scripts for article retrieval and summarization.
 
 🔮 Future Work
-	•	🌟 Explore feature interactions for improved interpretability.
-	•	🛠️ Use Optuna or similar tools for hyperparameter tuning.
-	•	🤝 Conduct fairness assessments to ensure unbiased predictions.
-	•	⏳ Incorporate real-time ICU data for dynamic predictions.
+-	🌟 Explore feature interactions for improved interpretability.
+-	🛠️ Use Optuna or similar tools for hyperparameter tuning.
+-	🤝 Conduct fairness assessments to ensure unbiased predictions.
+-	⏳ Incorporate real-time ICU data for dynamic predictions.
 
 📚 References
-	1.	GOSSIS Dataset
-	2.	Patient Data on Kaggle
-	3.	PubMed API
-	4.	CDC: Trends in Inpatient Hospital Deaths
+1.	GOSSIS Dataset
+2.	Patient Data on Kaggle
+3.	PubMed API
+4.	CDC: Trends in Inpatient Hospital Deaths
 
