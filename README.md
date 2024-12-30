@@ -13,6 +13,7 @@
 - [✨ Contributions and Novel Characteristics](#-contributions-and-novel-characteristics)
 - [🔮 Future Work](#-future-work)
 - [📚 References](#-references)
+- [🌐 Read More on Medium](#-read-more-on-medium)
 
 ---
 
@@ -45,7 +46,6 @@ The dataset originates from the **GOSSIS Consortium**, encompassing ICU data fro
 - **Missing Values**: Addressed via imputation and feature engineering.
 
 ---
-
 
 ## 🛠️ Methodology
 
@@ -102,24 +102,24 @@ Key metrics included:
 - 🤝 **Model Validation**: Compared machine learning models with traditional APACHE scores.
 - 📖 **PubMed Analysis**: Validated feature importance using scientific literature.
 
+---
 
-▶️ Running the Project
-	
-1.	Data Preprocessing:	Run AutoML.ipynb or NeuralNet/NN.ipynb.
-	
-2.	Model Training:	Navigate to Final Modeling/ for the main training scripts.
-	
-3.	PubMed Analysis:	Check PubMed/ scripts for article retrieval and summarization.
+## 🔮 Future Work
+- 🌟 Explore **feature interactions** for improved interpretability.
+- 🛠️ Use **Optuna** or similar tools for hyperparameter tuning.
+- 🤝 Conduct **fairness assessments** to ensure unbiased predictions.
+- ⏳ Incorporate **real-time ICU data** for dynamic predictions.
 
-🔮 Future Work
--	🌟 Explore feature interactions for improved interpretability.
--	🛠️ Use Optuna or similar tools for hyperparameter tuning.
--	🤝 Conduct fairness assessments to ensure unbiased predictions.
--	⏳ Incorporate real-time ICU data for dynamic predictions.
+---
 
-📚 References
-1.	GOSSIS Dataset
-2.	Patient Data on Kaggle
-3.	PubMed API
-4.	CDC: Trends in Inpatient Hospital Deaths
+## 📚 References
+1. [GOSSIS Dataset](https://gossis.mit.edu/)
+2. [Patient Data on Kaggle](https://www.kaggle.com/datasets/mitishaagarwal/patient/data)
+3. [PubMed API](https://pubmed.ncbi.nlm.nih.gov/)
+4. [CDC: Trends in Inpatient Hospital Deaths](https://www.cdc.gov/nchs/products/databriefs/db118.htm)
 
+---
+
+## 🌐 Read More on Medium
+For an in-depth explanation of the project, visit our Medium article:  
+**[Predicting ICU Mortality Using Machine Learning: A Global Perspective](https://medium.com/@pg.garg.pranav/predicting-icu-mortality-using-machine-learning-a-global-perspective-dc18d009afb0)**
